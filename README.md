@@ -1,4 +1,4 @@
-7# 🎬 Movie Object App
+# 🎬 Movie Object App
 
 A dynamic movie details application built using pure JavaScript DOM manipulation.
 
