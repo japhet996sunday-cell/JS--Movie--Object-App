@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie object App using Only JS</title>
+
+</head>
+
+<body>
+  <script>
+    
+    // CREATE OBJECT
+let movies = {
+  name: "Avengers: Endgame",
+  genre: "Action / Sci-Fi",
+  rating: "9.2/10",
+  actors: ["Robert Downey Jr", "Chris Evans", "Scarlett Johansson"],
+  date: "2019"
+};
+
+// CREATE CONTAINER
+const container = document.createElement("div");
+
+container.style.width = "350px";
+container.style.padding = "20px";
+container.style.margin = "50px auto";
+container.style.backgroundColor = "#222";
+container.style.color = "white";
+container.style.borderRadius = "10px";
+container.style.fontFamily = "Arial";
+container.style.textAlign = "center";
+container.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+
+// CREATE TITLE
+const title = document.createElement("h1");
+title.innerText = "Movie Object";
+
+// STYLE TITLE
+title.style.color = "orange";
+
+// CREATE BUTTON
+const btn = document.createElement("button");
+btn.innerText = "Show Movie Details";
+
+// STYLE BUTTON
+btn.style.padding = "10px 20px";
+btn.style.border = "none";
+btn.style.backgroundColor = "orange";
+btn.style.color = "white";
+btn.style.cursor = "pointer";
+btn.style.borderRadius = "5px";
+btn.style.fontSize = "16px";
+
+// CREATE RESULT AREA
+const result = document.createElement("div");
+result.style.marginTop = "20px";
+
+// BUTTON EVENT
+btn.onclick = function () {
+
+  result.innerHTML = `
+    <h2>${movies.name}</h2>
+    <p><strong>Genre:</strong> ${movies.genre}</p>
+    <p><strong>Rating:</strong> ${movies.rating}</p>
+    <p><strong>Actors:</strong> ${movies.actors.join(", ")}</p>
+    <p><strong>Date:</strong> ${movies.date}</p>
+  `;
+};
+
+// ADD ELEMENTS TO CONTAINER
+container.appendChild(title);
+container.appendChild(btn);
+container.appendChild(result);
+
+// ADD CONTAINER TO WEBPAGE
+document.body.appendChild(container);
+
+// STYLE BODY USING JAVASCRIPT
+document.body.style.backgroundColor = "#111";
+document.body.style.margin = "0";
+    
+  </script>
+</body>
+</html>
