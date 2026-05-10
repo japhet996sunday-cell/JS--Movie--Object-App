@@ -22,7 +22,8 @@ let movies = {
 // CREATE CONTAINER
 const container = document.createElement("div");
 
-container.style.width = "350px";
+container.style.width = "90%";
+container.style.maxWidth = "350px";
 container.style.padding = "20px";
 container.style.margin = "50px auto";
 container.style.backgroundColor = "#222";
@@ -51,6 +52,7 @@ btn.style.color = "white";
 btn.style.cursor = "pointer";
 btn.style.borderRadius = "5px";
 btn.style.fontSize = "16px";
+btn.style.width = "100%";
 
 // CREATE RESULT AREA
 const result = document.createElement("div");
@@ -79,6 +81,10 @@ document.body.appendChild(container);
 // STYLE BODY USING JAVASCRIPT
 document.body.style.backgroundColor = "#111";
 document.body.style.margin = "0";
+document.body.style.display = "flex";
+document.body.style.justifyContent = "center";
+document.body.style.alignItems = "center";
+document.body.style.minHeight = "100vh";
     
   </script>
 </body>
