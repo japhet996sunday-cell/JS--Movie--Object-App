@@ -1,4 +1,4 @@
-# 🎬 Movie Object App
+7# 🎬 Movie Object App
 
 A dynamic movie details application built using pure JavaScript DOM manipulation.
 
@@ -50,6 +50,16 @@ This project demonstrates how JavaScript can:
 - Rating
 - Actors
 - Release Date
+
+
+
+## 🌐 Live Demo
+https://japhet996sunday-cell.github.io/JS--Movie--Object-App/
+
+
+
+## 📂 Repository Link
+https://github.com/japhet996sunday-cell/JS--Movie--Object-App
 
 
 
